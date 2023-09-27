@@ -1,0 +1,68 @@
+.stories-container {
+    grid-column: 1/-1;
+    background-color: $main-green;
+    color: $main-white;
+    height: rem(745px);
+    place-items: center;
+
+    .stories {
+        grid-column: 2/4;
+
+        h1 {
+            font-size: rem(48px);
+            text-align: center;
+            margin-block-end: 30px;
+
+            span {
+                color: $main-light-green;
+            }
+        }
+
+        .quotes-container {
+            display: flex;
+            gap: 30px;
+            text-align: center;
+            position: relative;
+            z-index: 1;
+
+            .story-card {
+                &>* {
+                    margin-block-end: em(30px);
+                }
+
+                p {
+                    height: em(96px);
+                    width: em(350px);
+                    line-height: 1.5;
+                }
+
+                img {
+                    width: em(62px);
+                    height: auto;
+                    border-radius: em(31px);
+                    border: 2px solid $main-light-blue;
+                }
+
+                .person-title {
+                    h3 {
+                        color: $main-light-green;
+                        font-size: em(18px);
+                    }
+
+                    h4 {
+                        color: $main-white;
+                        font-size: em(13px);
+                        font-style: italic;
+                        font-weight: 400;
+                    }
+                }
+            }
+
+            .quotations {
+                position: relative;
+                z-index: -1;
+                top: 25px;
+            }
+        }
+    }
+}
