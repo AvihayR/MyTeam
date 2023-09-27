@@ -1,0 +1,12 @@
+.main-layout {
+  display: grid;
+  @include layoutGTC(minmax(auto, $break-normal));
+
+
+  main {
+    display: grid;
+    place-items: center;
+    grid-column: 2;
+    text-align: center;
+  }
+}

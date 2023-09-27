@@ -1,0 +1,16 @@
+button {
+    cursor: pointer;
+    background-color: $toy-cyan;
+    color: $toy-red;
+    font-weight: 700;
+    margin: 0.5em;
+    border: 0;
+    padding: 0.5em 0.8em;
+    border-radius: 4px;
+    transition: .3s;
+
+    &:hover {
+        background-color: $toy-red;
+        color: $toy-cyan;
+    }
+}

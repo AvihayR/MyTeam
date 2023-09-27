@@ -1,0 +1,28 @@
+.user-msg {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 1.2rem;
+    background-color: lightgray;
+    padding: .2em .5em;
+    position: fixed;
+    bottom: 0;
+    right: 1em;
+    color: white;
+    border-radius: 2px;
+
+    &.success {
+        background-color: $toy-cyan;
+        color: $toy-white;
+    }
+
+    &.error {
+        background-color: $toy-red;
+    }
+
+    button {
+        font-size: .5em;
+        float: right;
+        margin: .5em;
+        background-color: $toy-red;
+        color: $toy-white;
+    }
+}

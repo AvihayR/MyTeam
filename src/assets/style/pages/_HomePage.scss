@@ -1,0 +1,31 @@
+main .home {
+    .main-header {
+        color: $toy-red;
+    }
+
+    .sub-header {
+        color: $toy-blue;
+    }
+
+    ul {
+        margin-block: 2em;
+
+        li {
+            list-style: none;
+        }
+    }
+
+    p {
+        margin-block-end: 3em;
+    }
+
+    .chart-dashboard {
+        width: 70%;
+        max-height: 50vh;
+        margin: auto;
+
+        canvas {
+            margin-block: 2rem;
+        }
+    }
+}
