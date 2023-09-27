@@ -1,0 +1,29 @@
+.call-to-action-container {
+    position: relative;
+    grid-column: 1/-1;
+    background-color: $main-salmon;
+
+    img.half-circle {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+    }
+
+    .call-to-action {
+        grid-column: 2/4;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        color: $main-dark-green;
+        height: em(200px);
+
+        h1 {
+            font-size: rem(48px);
+            font-weight: 700;
+        }
+
+        .btn {
+            @include btn($type: regular, $bg-color: $main-salmon, $color: $main-dark-green);
+        }
+    }
+}

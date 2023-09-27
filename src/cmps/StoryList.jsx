@@ -12,7 +12,7 @@ const demoData = [
 export function StoryList() {
     return (
         <ul className="quotes-container">
-            {demoData.map(story => <StoryPreview story={story} />)}
+            {demoData.map(story => <StoryPreview key={story.title} story={story} />)}
         </ul>
     )
 }
