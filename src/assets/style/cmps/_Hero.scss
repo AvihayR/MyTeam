@@ -6,7 +6,7 @@
         position: relative;
         grid-column: 2/4;
         display: flex;
-        justify-content: space-around;
+        justify-content: space-between;
         align-items: center;
         color: $main-white;
         padding-block-end: rem(249px);
@@ -24,7 +24,7 @@
             font-weight: 400;
             line-height: em(28px);
             font-size: em(18px);
-            max-width: em(445px);
+            max-width: rem(445px);
         }
 
         img {

@@ -19,6 +19,7 @@
         justify-content: space-between;
         align-items: flex-start;
         position: relative;
+        width: 100%;
 
         h2 {
             font-size: rem(48px);
@@ -33,10 +34,11 @@
         }
 
         .card-list {
-            margin-inline-start: em(140px);
+            gap: rem(125px);
 
             .card {
                 gap: em(23px);
+                width: rem(445px);
 
                 h4 {
                     font-size: rem(18px);
@@ -47,11 +49,12 @@
                 p {
                     font-size: rem(15px);
                     margin-block-end: em(35px);
+                    max-width: em(446px);
                 }
 
                 img {
-                    width: rem(70px);
-                    height: rem(70px);
+                    width: rem(65px);
+                    height: rem(65px);
                 }
             }
         }
