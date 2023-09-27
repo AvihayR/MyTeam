@@ -7,7 +7,7 @@ html {}
 body {
   margin: 0;
   min-height: 100vh;
-  background-color: $toy-white;
+  font-family: 'Livvic', sans-serif;
 }
 
 h1,
@@ -21,13 +21,9 @@ li,
 p,
 a {
   margin: 0;
-  font-family: 'Noto Sans Hebrew', sans-serif;
 }
 
-.logo {
-  font-family: 'Titan One', cursive;
-  text-shadow: 1px 2px black;
-}
+.logo {}
 
 p {
   margin: 0 0 1em;

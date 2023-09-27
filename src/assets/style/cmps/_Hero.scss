@@ -1,0 +1,27 @@
+.hero-container {
+    grid-column: 1/-1;
+    background-color: $main-green;
+
+    .hero {
+        grid-column: 2/4;
+        display: flex;
+        align-items: center;
+        color: $main-white;
+        margin-block-end: 15rem;
+
+        h1 {
+            font-size: rem(100px);
+            min-width: rem(635px);
+
+            span {
+                color: $main-salmon;
+            }
+        }
+
+        h3 {
+            font-weight: 400;
+            line-height: em(28px);
+            font-size: em(18px);
+        }
+    }
+}

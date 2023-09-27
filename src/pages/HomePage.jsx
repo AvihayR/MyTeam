@@ -5,7 +5,7 @@ export function HomePage() {
 
     return (
         <>
-            {/* <Hero /> */}
+            <Hero />
             {/* <SubHero /> */}
         </>
     )

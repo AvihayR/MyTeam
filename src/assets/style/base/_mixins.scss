@@ -28,25 +28,20 @@
     grid-template-columns: minmax(1.6rem, auto) $max minmax(1.6rem, auto);
 }
 
-@mixin btn($type: regular, $bg-color: $toy-blue, $color: $toy-cyan) {
+@mixin btn($type: regular, $bg-color: transparent, $color: $main-white) {
     background-color: $bg-color;
     color: $color;
+    padding-inline: rem(32px);
+    padding-block: rem(10px);
+    font-size: rem(18px);
+    border-radius: 3rem;
+    border: 0;
+    outline: 1px solid $main-white;
+    cursor: pointer;
+    transition: background-color 0.4s, color 0.3s;
 
-    @if $type ==add {
-        border-radius: 5em;
-        width: rem(45px);
-        height: rem(45px);
-        font-size: 1rem;
-        transition: background-color 0.4s;
-
-        svg {
-            width: 100%;
-            height: auto;
-        }
-
-        &:hover {
-            color: $toy-blue;
-            background-color: $toy-red;
-        }
+    &:hover {
+        color: $bg-color;
+        background-color: $color;
     }
 }

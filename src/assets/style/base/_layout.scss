@@ -1,12 +1,5 @@
 .main-layout {
   display: grid;
-  @include layoutGTC(minmax(auto, $break-normal));
-
-
-  main {
-    display: grid;
-    place-items: center;
-    grid-column: 2;
-    text-align: center;
-  }
+  grid-template-columns: rem(165px) 1fr 1fr rem(165px);
+  // @include layoutGTC(minmax(auto, $break-normal));
 }

@@ -1,43 +1,25 @@
-.app-header {
-
-  @include for-mobile-layout {
-    flex-direction: column;
-    gap: 1rem;
-  }
-
-  font-family: system-ui,
-  -apple-system,
-  BlinkMacSystemFont,
-  'Segoe UI',
-  Roboto,
-  Oxygen,
-  Ubuntu,
-  Cantarell,
-  'Open Sans',
-  'Helvetica Neue',
-  sans-serif;
+header {
+  grid-column: 1/-1;
   display: flex;
-  justify-content: space-between;
-  align-items: center;
-  background-color: $toy-blue;
-  color: $toy-red;
-  padding: 0.5em $layoutPadding;
-  margin-block-end: 1.5rem;
+  padding-block: rem(77px);
+  background-color: $main-green;
+  color: $main-white;
 
-  .links {
+  .main-header {
+    grid-column: 2/4;
     display: flex;
-    gap: 1em;
-    font-weight: 700;
-    font-size: 1.2rem;
-
-    a.active {
-      color: $toy-cyan;
-      text-decoration: none;
-    }
+    align-items: center;
+    gap: rem(80px);
   }
 
-  h1 span {
-    color: $toy-cyan;
+  .nav-links {
+    display: flex;
+    gap: rem(40px);
+    font-size: rem(18px);
   }
 
+  .btn {
+    margin-inline-start: auto;
+    @include btn($color: $main-white, $bg-color: $main-green);
+  }
 }
