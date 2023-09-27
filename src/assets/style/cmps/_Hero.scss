@@ -3,11 +3,13 @@
     background-color: $main-green;
 
     .hero {
+        position: relative;
         grid-column: 2/4;
         display: flex;
+        justify-content: space-around;
         align-items: center;
         color: $main-white;
-        margin-block-end: 15rem;
+        padding-block-end: rem(249px);
 
         h1 {
             font-size: rem(100px);
@@ -22,6 +24,14 @@
             font-weight: 400;
             line-height: em(28px);
             font-size: em(18px);
+            max-width: em(445px);
+        }
+
+        img {
+            position: absolute;
+            bottom: 0;
+            right: 0;
         }
     }
+
 }

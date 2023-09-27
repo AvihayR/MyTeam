@@ -6,7 +6,7 @@ export function HomePage() {
     return (
         <>
             <Hero />
-            {/* <SubHero /> */}
+            <SubHero />
         </>
     )
 }

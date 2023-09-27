@@ -23,8 +23,6 @@ a {
   margin: 0;
 }
 
-.logo {}
-
 p {
   margin: 0 0 1em;
 }
@@ -34,7 +32,9 @@ a {
   color: unset;
 }
 
-
+ul {
+  padding: 0
+}
 
 /* Dont stretch my Media */
 img,
